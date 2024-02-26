@@ -91,11 +91,7 @@ function Home() {
             onClick={() => setIsopen(!isOpen)}
             className="w-7 absolute right-10 top-5 cursor-pointer md:hidden"
           >
-            {!isOpen ? (
-              <Bars3BottomLeftIcon className="" />
-            ) : (
-              <XMarkIcon className="" />
-            )}
+            {!isOpen ? <Bars3BottomLeftIcon /> : <XMarkIcon />}
           </div>
           {/*nav Links */}
           <ul
@@ -127,7 +123,9 @@ function Home() {
             minus atque voluptatibus numquam asperiores ducimus sed veritatis
             nobis voluptatum voluptates
           </p>
-          <div className="bg-green-400 py-2 px-4 mt-[30px] flex gap-5">icons over here</div>
+          <div className="bg-green-400 py-2 px-4 mt-[30px] flex gap-5">
+            icons over here
+          </div>
         </div>
 
         {/*Navbar */}
