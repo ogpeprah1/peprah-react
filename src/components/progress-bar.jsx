@@ -6,7 +6,7 @@ function ProgressBar(props) {
   };
 
   return (
-    <div className="h-8 w-full rounded-xl m-6 bg-white">
+    <div className="h-8 w-full rounded-xl m-6 bg-[#202124]">
       <div
         style={progressBarStyle}
         className="h-full bg-green-400 rounded-xl text-right flex items-center justify-center"

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ServiceCard from "../components/service-component";
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import ProgressBar from "../components/progress-bar";
+import emailjs from "@emailjs/browser";
 
 function Home() {
   const services = [
@@ -78,6 +79,27 @@ function Home() {
   ];
   const [isOpen, setIsopen] = useState(false);
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_uriaea9", "template_esmxml7", form.current, {
+        publicKey: "tbWXyHJwTsGcY_3Ki",
+      })
+      .then(
+        (res) => {
+          console.log(res.text);
+          window.alert("message sent!");
+        },
+        (error) => {
+          console.log("failed...", error.text);
+          window.alert("message did not send!");
+        }
+      );
+  };
+
   return (
     <React.Fragment>
       <div className="w-full fixed top-0 left-0 bg-black">
@@ -101,7 +123,7 @@ function Home() {
            }`}
           >
             {Links.map((Link) => (
-              <li className="my-7 md:my-0 md:ml-8">
+              <li className="my-7 md:my-0 md:ml-8 hover:text-green-400 duration-500">
                 <a href={Link.link}>{Link.name}</a>
               </li>
             ))}
@@ -168,7 +190,7 @@ function Home() {
       <div className=" w-[100%] bg-[#202124] text-white p-[1em] md:p-[7em] flex flex-col justify-center items-center gap-10">
         <div className=" h-full">
           <h1
-            className="text-2xl md:text-5xl text-center border-red-300  border-b-2 p-4 w-fit"
+            className="text-2xl md:text-5xl text-center border-green-400  border-b-2 p-4 w-fit"
             id="services-head-text"
           >
             Services
@@ -191,7 +213,7 @@ function Home() {
         id="skills-head-text"
       >
         <div className="mt-[2em] h-full">
-          <h1 className="text-2xl md:text-5xl text-center border-red-300  border-b-2 p-4 w-fit">
+          <h1 className="text-2xl md:text-5xl text-center border-green-400  border-b-2 p-4 w-fit">
             Skills and Portfolio
           </h1>
         </div>
@@ -199,7 +221,7 @@ function Home() {
         <div className="flex flex-col w-full justify-center items-center ">
           {Skills.map((skill) => (
             <div className="flex flex-col md:flex-row gap-0 md:gap-2 justify-center items-center w-full md:w-[70%]">
-              <p className="w-full md:w-[20%] text-red-300 text-[1.2em] font-semibold">
+              <p className="w-full md:w-[20%] text-green-400 text-[1.2em] font-semibold">
                 {skill.title}
               </p>
               <ProgressBar completed={skill.value} />
@@ -223,7 +245,7 @@ function Home() {
       >
         <div className=" mt-[2em] h-full">
           <h1
-            className="text-2xl md:text-5xl text-center border-red-300  border-b-2 p-4 w-fit"
+            className="text-2xl md:text-5xl text-center border-green-400  border-b-2 p-4 w-fit"
             id="services-head-text"
           >
             Case Studies
@@ -240,6 +262,58 @@ function Home() {
           ))}
         </div>
       </div>
+      {/*Contact form */}
+
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="w-[100%] bg-black text-white p-[1em] md:p-[7em] flex flex-col justify-center items-center gap-5 text-[0.9em]"
+        id="contact-head-text"
+      >
+        <div className=" mt-[2em] h-full">
+          <h1
+            className="text-2xl md:text-4xl text-center border-green-400  border-b-2 p-4 w-fit"
+            id="services-head-text"
+          >
+            Send me a message
+          </h1>
+        </div>
+        <input
+          type="text"
+          name="user_name"
+          placeholder="enter name"
+          className="w-full md:w-1/2 h-12 p-3 rounded-md bg-[#202124] border-2 border-green-400 outline-none"
+        />
+        <input
+          type="email"
+          placeholder="enter email"
+          name="user_email"
+          className="w-full md:w-1/2 h-12 p-3  rounded-md bg-[#202124] border-2 border-green-400 outline-none"
+        />
+        <textarea
+          id=""
+          placeholder="enter message.."
+          name="message"
+          className="w-full md:w-1/2 h-[30vh] p-3 rounded-md border-2 bg-[#202124] border-green-400 outline-none"
+        ></textarea>
+
+        <input
+          className="bg-green-400 px-5 py-3 rounded-md"
+          type="submit"
+          value="Send Message"
+        />
+      </form>
+
+      {/*footer section */}
+      <footer className=" items-center bg-[#202124] text-white">
+        <div className="flex justify-between w-full px-4 py-10 md:px-[7em]">
+          <p>peprah.inc</p>
+          <p>Copyright©2024</p>
+        </div>
+        <div className="text-black bg-green-400 w-full p-3 text-center font-medium">
+          <p>made with love &#60;3</p>
+        </div>
+      </footer>
     </React.Fragment>
   );
 }
