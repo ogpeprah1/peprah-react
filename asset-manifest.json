@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/peprah-react/static/css/main.bcf9189d.css",
-    "main.js": "/peprah-react/static/js/main.3f046cc6.js",
+    "main.css": "/peprah-react/static/css/main.6b4c323e.css",
+    "main.js": "/peprah-react/static/js/main.362e2938.js",
     "static/js/453.1407b060.chunk.js": "/peprah-react/static/js/453.1407b060.chunk.js",
     "static/media/companylogo.png": "/peprah-react/static/media/companylogo.b0b7a0c4da4432e2905d.png",
     "index.html": "/peprah-react/index.html",
-    "main.bcf9189d.css.map": "/peprah-react/static/css/main.bcf9189d.css.map",
-    "main.3f046cc6.js.map": "/peprah-react/static/js/main.3f046cc6.js.map",
+    "main.6b4c323e.css.map": "/peprah-react/static/css/main.6b4c323e.css.map",
+    "main.362e2938.js.map": "/peprah-react/static/js/main.362e2938.js.map",
     "453.1407b060.chunk.js.map": "/peprah-react/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcf9189d.css",
-    "static/js/main.3f046cc6.js"
+    "static/css/main.6b4c323e.css",
+    "static/js/main.362e2938.js"
   ]
 }
