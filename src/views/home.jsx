@@ -51,7 +51,7 @@ function Home() {
     },
     {
       name: "Contact",
-      link: "/",
+      link: "#contact-head-text",
     },
   ];
 
@@ -274,7 +274,7 @@ function Home() {
         <div className=" mt-[2em] h-full">
           <h1
             className="text-2xl md:text-4xl text-center border-green-400  border-b-2 p-4 w-fit"
-            id="services-head-text"
+            id="contact-head-text"
           >
             Send me a message
           </h1>
