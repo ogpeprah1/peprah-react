@@ -92,6 +92,7 @@ function Home() {
         (res) => {
           console.log(res.text);
           window.alert("message sent!");
+          e.target.reset();
         },
         (error) => {
           console.log("failed...", error.text);
@@ -306,7 +307,7 @@ function Home() {
 
       {/*footer section */}
       <footer className=" items-center bg-[#202124] text-white">
-        <div className="flex justify-between w-full px-4 py-10 md:px-[7em]">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full px-4 py-5 md:py-10 md:px-[7em]">
           <p>peprah.inc</p>
           <p>Copyright©2024</p>
         </div>
