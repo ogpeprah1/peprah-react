@@ -7,24 +7,28 @@ import emailjs from "@emailjs/browser";
 function Home() {
   const services = [
     {
-      title: "Web Design",
+      title: "Web Development",
       description:
         "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
+      img: "./assets/web-development.png",
     },
     {
       title: "Graphic Design",
       description:
         "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
+      img: "./assets/graphics.png",
     },
     {
       title: "Data Analytics",
       description:
         "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
+      img: "./assets/analytics.png",
     },
     {
-      title: "Data Analytics",
+      title: "App Development",
       description:
         "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
+      img: "./assets/development.png",
     },
   ];
 
@@ -125,7 +129,9 @@ function Home() {
           >
             {Links.map((Link) => (
               <li className="my-7 md:my-0 md:ml-8 hover:text-green-400 duration-500">
-                <a href={Link.link}>{Link.name}</a>
+                <a href={Link.link} key={Link.id}>
+                  {Link.name}
+                </a>
               </li>
             ))}
           </ul>
@@ -163,8 +169,7 @@ function Home() {
           <h1 className="text-2xl md:text-5xl">About Me</h1>
           <br />
           <h1 className="text-[1.2em] md:text-[1.5em]">
-            I am a ,{" "}
-            <span className="text-green-400">Godfred Peprah Owusu</span>
+            I am a ,<span className="text-green-400">Godfred Peprah Owusu</span>
           </h1>
           <p className="text-gray-300 mt-4 mb-5">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
@@ -200,6 +205,7 @@ function Home() {
         <div className="flex gap-5 md:10 justify-center flex-wrap">
           {services.map((service) => (
             <ServiceCard
+              img={service.img}
               title={service.title}
               key={service.id}
               description={service.description}
@@ -268,12 +274,12 @@ function Home() {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="w-[100%] bg-black text-white p-[1em] md:p-[7em] flex flex-col justify-center items-center gap-5 text-[0.9em]"
+        className="w-[100%] bg-black text-white p-[2em] md:p-[7em] flex flex-col justify-center items-center gap-5 text-[0.9em]"
         id="contact-head-text"
       >
         <div className=" mt-[2em] h-full">
           <h1
-            className="text-2xl md:text-4xl text-center border-green-400  border-b-2 p-4 w-fit"
+            className="text-2xl md:text-4xl text-center border-green-400  border-b-2 w-fit"
             id="contact-head-text"
           >
             Send me a message
