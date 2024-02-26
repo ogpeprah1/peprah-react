@@ -4,31 +4,36 @@ import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import ProgressBar from "../components/progress-bar";
 import emailjs from "@emailjs/browser";
 
+import AnalyticsImg from "../assets/analytics.png";
+import WebDevImg from "../assets/web-development.png";
+import GraphicImg from "../assets/graphics.png";
+import AppImg from "../assets/development.png";
+
 function Home() {
   const services = [
     {
       title: "Web Development",
       description:
         "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
-      img: "./assets/web-development.png",
+      img: WebDevImg,
     },
     {
       title: "Graphic Design",
       description:
         "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
-      img: "./assets/graphics.png",
+      img: GraphicImg,
     },
     {
       title: "Data Analytics",
       description:
         "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
-      img: "./assets/analytics.png",
+      img: AnalyticsImg,
     },
     {
       title: "App Development",
       description:
         "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
-      img: "./assets/development.png",
+      img: AppImg,
     },
   ];
 
@@ -122,7 +127,7 @@ function Home() {
           </div>
           {/*nav Links */}
           <ul
-            className={`md:flex md:items-center md:pb-0 pt-4 pb-4 absolute md:static z-[-1]
+            className={`md:flex md:items-center md:pb-0 md:pt-0 pt-3 pb-3 absolute md:static z-[-1]
            md:z-auto left-0 md:w-auto md-pl-0 pl-9 transition-all bg-black w-full duration-500 ease-in ${
              isOpen ? "top-12" : "top-[-40vh]"
            }`}
@@ -139,12 +144,11 @@ function Home() {
       </div>
 
       <div
-        className="w-[100%] h-[full] bg-[#202124] text-white p-[2em] md:p-[7em] flex flex-col gap-10"
+        className="w-[100%] h-[full] bg-[#202124] text-white p-[2em] md:p-[7em] flex flex-col md:flex-row gap-10"
         id="header-text"
       >
         {/*Home Section */}
-        <img src="" alt="" />
-        <div className=" w-[100%] md:w-1/2 h-full mt-[10vh]">
+        <div className=" w-[100%] md:w-1/2 h-full mt-[10vh] ">
           <h1 className="text-3xl">Hello i am</h1>
           <h1 className="text-[5em] font-bold">Peprah</h1>
           <p className="text-gray-300">
@@ -156,8 +160,11 @@ function Home() {
             icons over here
           </div>
         </div>
-
-        {/*Navbar */}
+        <img
+          src="../assets/ceo.png"
+          alt="pic of CEO"
+          className="w-[100%] md:w-1/2 mt-[10vh]"
+        />
       </div>
 
       {/* About Section */}
@@ -265,6 +272,7 @@ function Home() {
               title={service.title}
               key={service.id}
               description={service.description}
+              img={service.img}
             />
           ))}
         </div>
@@ -279,7 +287,7 @@ function Home() {
       >
         <div className=" mt-[2em] h-full">
           <h1
-            className="text-2xl md:text-4xl text-center border-green-400  border-b-2 w-fit"
+            className="text-2xl md:text-4xl text-center border-green-400  border-b-2 w-fit "
             id="contact-head-text"
           >
             Send me a message
@@ -290,22 +298,25 @@ function Home() {
           name="user_name"
           placeholder="enter name"
           className="w-full md:w-1/2 h-12 p-3 rounded-md bg-[#202124] border-2 border-green-400 outline-none"
+          required
         />
         <input
           type="email"
           placeholder="enter email"
           name="user_email"
           className="w-full md:w-1/2 h-12 p-3  rounded-md bg-[#202124] border-2 border-green-400 outline-none"
+          required
         />
         <textarea
           id=""
           placeholder="enter message.."
           name="message"
           className="w-full md:w-1/2 h-[30vh] p-3 rounded-md border-2 bg-[#202124] border-green-400 outline-none"
+          required
         ></textarea>
 
         <input
-          className="bg-green-400 px-5 py-3 rounded-md"
+          className="bg-green-400 px-5 py-3 rounded-md hover:cursor-pointer"
           type="submit"
           value="Send Message"
         />
