@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/peprah-react/static/css/main.10fb16fd.css",
+    "main.js": "/peprah-react/static/js/main.98d417e3.js",
+    "static/js/453.1407b060.chunk.js": "/peprah-react/static/js/453.1407b060.chunk.js",
+    "index.html": "/peprah-react/index.html",
+    "main.10fb16fd.css.map": "/peprah-react/static/css/main.10fb16fd.css.map",
+    "main.98d417e3.js.map": "/peprah-react/static/js/main.98d417e3.js.map",
+    "453.1407b060.chunk.js.map": "/peprah-react/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10fb16fd.css",
+    "static/js/main.98d417e3.js"
+  ]
+}
