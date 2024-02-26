@@ -7,22 +7,22 @@ function Home() {
     {
       title: "Web Design",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minus atque voluptatibus numquam asperiores ducimus sed veritatisnobis",
+        "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
     },
     {
       title: "Graphic Design",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minus atque voluptatibus numquam asperiores ducimus sed veritatisnobis",
+        "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
     },
     {
       title: "Data Analytics",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minus atque voluptatibus numquam asperiores ducimus sed veritatisnobis",
+        "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
     },
     {
       title: "Data Analytics",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta minus atque voluptatibus numquam asperiores ducimus sed veritatisnobis",
+        "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
     },
   ];
 
