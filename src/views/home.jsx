@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ServiceCard from "../components/service-component";
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import ProgressBar from "../components/progress-bar";
 
 function Home() {
   const services = [
@@ -41,7 +42,11 @@ function Home() {
     },
     {
       name: "Portfolio",
-      link: "/",
+      link: "#skills-head-text",
+    },
+    {
+      name: "Case Studies",
+      link: "#case-head-text",
     },
     {
       name: "Contact",
@@ -49,6 +54,28 @@ function Home() {
     },
   ];
 
+  const Skills = [
+    {
+      title: "React JS",
+      value: 80,
+    },
+    {
+      title: "Laravel PHP",
+      value: 60,
+    },
+    {
+      title: "WordPress",
+      value: 90,
+    },
+    {
+      title: ".NET",
+      value: 50,
+    },
+    {
+      title: "Flutter",
+      value: 70,
+    },
+  ];
   const [isOpen, setIsopen] = useState(false);
 
   return (
@@ -100,8 +127,7 @@ function Home() {
             minus atque voluptatibus numquam asperiores ducimus sed veritatis
             nobis voluptatum voluptates
           </p>
-          <div className="bg-green-400 py-2 px-4 mt-[30px] flex gap-5">
-          </div>
+          <div className="bg-green-400 py-2 px-4 mt-[30px] flex gap-5">icons over here</div>
         </div>
 
         {/*Navbar */}
@@ -134,7 +160,10 @@ function Home() {
             Download CV
           </a>
         </div>
-        <div className="bg-green-400 w-[100%] h-[250px] md:w-1/2"></div>
+        <div
+          className="bg-black w-[100%] h-[250px] md:w-1/2 bg-[url('./assets/companylogo.png')]
+         bg-no-repeat bg-auto bg-center"
+        ></div>
       </div>
 
       {/*Services Section */}
@@ -158,14 +187,60 @@ function Home() {
         </div>
       </div>
 
-      {/*Portfolio Section */}
-      <div className=" w-[100%] bg-[#111112] text-white p-[2em] md:p-[7em] flex flex-col justify-center items-center gap-10">
-        <div className=" h-full">
-          <h1 className="portfolio-head-text text-2xl md:text-5xl text-center border-red-300  border-b-2 p-4 w-full">
-            My Skills and Tools
+      {/*Skills Section */}
+      <div
+        className=" w-[100%] bg-black text-white p-[1em] md:p-[7em] flex flex-col justify-center items-center gap-10"
+        id="skills-head-text"
+      >
+        <div className="mt-[2em] h-full">
+          <h1 className="text-2xl md:text-5xl text-center border-red-300  border-b-2 p-4 w-fit">
+            Skills and Portfolio
           </h1>
         </div>
-        <div className="flex gap-10 justify-center flex-wrap"></div>
+
+        <div className="flex flex-col w-full justify-center items-center ">
+          {Skills.map((skill) => (
+            <div className="flex flex-col md:flex-row gap-0 md:gap-2 justify-center items-center w-full md:w-[70%]">
+              <p className="w-full md:w-[20%] text-red-300 text-[1.2em] font-semibold">
+                {skill.title}
+              </p>
+              <ProgressBar completed={skill.value} />
+            </div>
+          ))}
+        </div>
+
+        {/* <div className="flex overflow-x-auto bg-white w-[600px] p-2 gap-2">
+          <div className="w-[150px] bg-black h-12"></div>
+          <div className="w-[150px] bg-black h-12"></div>
+          <div className="w-[150px] bg-black h-12"></div>
+          <div className="w-[150px] bg-black h-12"></div>
+          <div className="w-[150px] bg-black h-12"></div>
+        </div> */}
+      </div>
+
+      {/*Case Studies Section */}
+      <div
+        className=" w-[100%] bg-[#202124] text-white p-[1em] md:p-[7em] flex flex-col justify-center items-center gap-10"
+        id="case-head-text"
+      >
+        <div className=" mt-[2em] h-full">
+          <h1
+            className="text-2xl md:text-5xl text-center border-red-300  border-b-2 p-4 w-fit"
+            id="services-head-text"
+          >
+            Case Studies
+          </h1>
+        </div>
+
+        <div className="flex gap-5 md:10 justify-center flex-wrap">
+          {services.map((service) => (
+            <ServiceCard
+              title={service.title}
+              key={service.id}
+              description={service.description}
+            />
+          ))}
+        </div>
       </div>
     </React.Fragment>
   );
