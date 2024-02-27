@@ -243,7 +243,7 @@ function Home() {
           <h1 className="text-2xl md:text-5xl">About Me</h1>
           <br />
           <h1 className="text-[1.2em] md:text-[1.5em]">
-            I am,<span className="text-green-400">Godfred Peprah Owusu</span>
+            I am,<span className="text-green-400"> Godfred Peprah Owusu</span>
           </h1>
           <p className="text-gray-300 mt-4 mb-5">
             I am a self-taught full-stack developer and graphic designer,
