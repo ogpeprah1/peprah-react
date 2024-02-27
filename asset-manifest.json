@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/peprah-react/static/css/main.bef93626.css",
-    "main.js": "/peprah-react/static/js/main.f3847a21.js",
+    "main.js": "/peprah-react/static/js/main.bfa068b3.js",
     "static/js/453.1407b060.chunk.js": "/peprah-react/static/js/453.1407b060.chunk.js",
     "static/media/ceo.jpeg": "/peprah-react/static/media/ceo.6350170bd5182e6f5472.jpeg",
     "static/media/instagram.png": "/peprah-react/static/media/instagram.e719d8b29f452a16302d.png",
@@ -14,11 +14,11 @@
     "static/media/development.png": "/peprah-react/static/media/development.ec2ba861e4e2f4ceba9d.png",
     "index.html": "/peprah-react/index.html",
     "main.bef93626.css.map": "/peprah-react/static/css/main.bef93626.css.map",
-    "main.f3847a21.js.map": "/peprah-react/static/js/main.f3847a21.js.map",
+    "main.bfa068b3.js.map": "/peprah-react/static/js/main.bfa068b3.js.map",
     "453.1407b060.chunk.js.map": "/peprah-react/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bef93626.css",
-    "static/js/main.f3847a21.js"
+    "static/js/main.bfa068b3.js"
   ]
 }
