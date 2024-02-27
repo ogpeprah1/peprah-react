@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/peprah-react/static/css/main.6b4c323e.css",
-    "main.js": "/peprah-react/static/js/main.362e2938.js",
+    "main.css": "/peprah-react/static/css/main.9e08c912.css",
+    "main.js": "/peprah-react/static/js/main.29be98bb.js",
     "static/js/453.1407b060.chunk.js": "/peprah-react/static/js/453.1407b060.chunk.js",
+    "static/media/analytics.png": "/peprah-react/static/media/analytics.9e470bf3bc690619dd8a.png",
+    "static/media/graphics.png": "/peprah-react/static/media/graphics.99f221cfd10769b5d2fa.png",
+    "static/media/web-development.png": "/peprah-react/static/media/web-development.f9d169e80e84e333a6d1.png",
     "static/media/companylogo.png": "/peprah-react/static/media/companylogo.b0b7a0c4da4432e2905d.png",
+    "static/media/development.png": "/peprah-react/static/media/development.ec2ba861e4e2f4ceba9d.png",
     "index.html": "/peprah-react/index.html",
-    "main.6b4c323e.css.map": "/peprah-react/static/css/main.6b4c323e.css.map",
-    "main.362e2938.js.map": "/peprah-react/static/js/main.362e2938.js.map",
+    "main.9e08c912.css.map": "/peprah-react/static/css/main.9e08c912.css.map",
+    "main.29be98bb.js.map": "/peprah-react/static/js/main.29be98bb.js.map",
     "453.1407b060.chunk.js.map": "/peprah-react/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b4c323e.css",
-    "static/js/main.362e2938.js"
+    "static/css/main.9e08c912.css",
+    "static/js/main.29be98bb.js"
   ]
 }
