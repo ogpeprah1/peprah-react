@@ -8,32 +8,71 @@ import AnalyticsImg from "../assets/analytics.png";
 import WebDevImg from "../assets/web-development.png";
 import GraphicImg from "../assets/graphics.png";
 import AppImg from "../assets/development.png";
+import ceoImg from "../assets/ceo.jpeg";
+import CaseStudyCard from "../components/case-study-card";
+import whatsapp_icon from "../assets/whatsapp.png";
+import insta_icon from "../assets/instagram.png";
+import github_icon from "../assets/github.png";
 
 function Home() {
   const services = [
     {
       title: "Web Development",
       description:
-        "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
+        "Elevate your online presence with my expert web development services. Customized solutions for a seamless, responsive, and visually stunning website.",
       img: WebDevImg,
     },
     {
       title: "Graphic Design",
       description:
-        "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
+        "I transform your ideas into visuals with top-notch graphic design tools. Elevate your brand with captivating designs that leave a lasting impression.",
       img: GraphicImg,
     },
     {
       title: "Data Analytics",
       description:
-        "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
+        "I have the passion for unlocking insights from data that drive decisions. Harness the power of data analytics for smarter business strategies.",
       img: AnalyticsImg,
     },
     {
       title: "App Development",
       description:
-        "Lorem, ipsum dolor sit amet uptatibus numquam asperiores ducimus sed veritatisnobis",
+        "I have the skill to help elevate your business with custom app development. From concept to code, i craft user-friendly, innovative solutions, transforming ideas into reality.",
       img: AppImg,
+    },
+  ];
+
+  const Cases = [
+    {
+      title: "API Dictionary",
+      description:
+        "A dictionary web app that utilises APIs. I used fetch.js to get all the JSON data needed to provide meaning for any word in the dictionary. Feel free to use it",
+      img: WebDevImg,
+      url: "https://github.com/ogpeprah1/simple-dictionary.git",
+      tags: "HTML, CSS, Fetch Api",
+    },
+    {
+      title: "TODO APP",
+      description:
+        "A Todo web app with HTML, CSS and JS. The user inputs some activities that are yet to be accomplished at a particular time. The user also has the ability to edit and delete todos. ",
+      img: GraphicImg,
+      url: "https://github.com/ogpeprah1/todo-app.git",
+      tags: "HTML, CSS, JS",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "This website was built in REACT JS. Browse the code on github if you like yours to be like this. Hit me up if you can't find your way around it too.",
+      img: AnalyticsImg,
+      url: "https://github.com/ogpeprah1/peprah-react.git",
+      tags: "React JS",
+    },
+    {
+      title: "School Website",
+      description: "A simple school website with HTML and CSS.",
+      img: AppImg,
+      url: "https://github.com/ogpeprah1/school-website-new.git",
+      tags: "HTML, CSS",
     },
   ];
 
@@ -144,26 +183,54 @@ function Home() {
       </div>
 
       <div
-        className="w-[100%] h-[full] bg-[#202124] text-white p-[2em] md:p-[7em] flex flex-col md:flex-row gap-10"
+        className="w-[100%] h-[full] bg-[#202124] text-white p-[2em] md:p-[7em] md:justify-around flex flex-col md:flex-row"
         id="header-text"
       >
         {/*Home Section */}
-        <div className=" w-[100%] md:w-1/2 h-full mt-[10vh] ">
+        <div className=" w-[100%] md:w-1/2 h-full mt-[10vh]">
           <h1 className="text-3xl">Hello i am</h1>
-          <h1 className="text-[5em] font-bold">Peprah</h1>
+          <h1 className=" text-[5em] md:text-[7em] font-bold">Peprah</h1>
           <p className="text-gray-300">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            minus atque voluptatibus numquam asperiores ducimus sed veritatis
-            nobis voluptatum voluptates
+            a Full Stack Developer and a Graphic Designer.
           </p>
-          <div className="bg-green-400 py-2 px-4 mt-[30px] flex gap-5">
-            icons over here
+          <div className=" py-2  mt-[30px] flex gap-5">
+            <a href="https://wa.link/h33aon" target="_blank" rel="noreferrer">
+              <img
+                src={whatsapp_icon}
+                alt=""
+                className="w-8 h-8 hover:scale-125 duration-500 hover:cursor-pointer"
+              />
+            </a>
+
+            <a
+              href="https://github.com/ogpeprah1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={github_icon}
+                alt=""
+                className="w-8 h-8 hover:scale-125 duration-500 hover:cursor-pointer"
+              />
+            </a>
+
+            <a
+              href="https://instagram.com/gho_dey/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={insta_icon}
+                alt=""
+                className="w-8 h-8 hover:scale-125 duration-500 hover:cursor-pointer"
+              />
+            </a>
           </div>
         </div>
         <img
-          src="../assets/ceo.png"
+          src={ceoImg}
           alt="pic of CEO"
-          className="w-[100%] md:w-1/2 mt-[10vh]"
+          className="w-full md:w-[30%] md:block mt-[10vh] md:ml-[15vh] bg-black rounded-lg"
         />
       </div>
 
@@ -179,13 +246,13 @@ function Home() {
             I am a ,<span className="text-green-400">Godfred Peprah Owusu</span>
           </h1>
           <p className="text-gray-300 mt-4 mb-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            minus atque voluptatibus numquam asperiores ducimus sed veritatis
-            nobis voluptatum voluptates voluptatibus numquam asperiores ducimus
-            sed veritatis nobis voluptatum voluptates
+            I am a self-taught full-stack developer and graphic designer,
+            passionate about creating seamless digital experiences. My skills
+            span coding and design, merging creativity and technology for
+            innovative solutions."
           </p>
           <a
-            href="file.pdf"
+            href="CURRICULUM VITAE.pdf"
             download="CV"
             className="bg-green-400 py-2 px-4 rounded-md mt-4"
             id="to-services-head-text"
@@ -252,7 +319,7 @@ function Home() {
         </div> */}
       </div>
 
-      {/*Case Studies Section */}
+      {/* Case Studies Section */}
       <div
         className=" w-[100%] bg-[#202124] text-white p-[1em] md:p-[7em] flex flex-col justify-center items-center gap-10"
         id="case-head-text"
@@ -267,12 +334,14 @@ function Home() {
         </div>
 
         <div className="flex gap-5 md:10 justify-center flex-wrap">
-          {services.map((service) => (
-            <ServiceCard
-              title={service.title}
-              key={service.id}
-              description={service.description}
-              img={service.img}
+          {Cases.map((case_comp) => (
+            <CaseStudyCard
+              img={case_comp.img}
+              title={case_comp.title}
+              key={case_comp.id}
+              description={case_comp.description}
+              case_url={case_comp.url}
+              tags={case_comp.tags}
             />
           ))}
         </div>
@@ -282,7 +351,7 @@ function Home() {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="w-[100%] bg-black text-white p-[2em] md:p-[7em] flex flex-col justify-center items-center gap-5 text-[0.9em]"
+        className="w-[100%] bg-black text-white p-[1.3em] md:p-[7em] flex flex-col justify-center items-center gap-5 text-[0.9em]"
         id="contact-head-text"
       >
         <div className=" mt-[2em] h-full">
