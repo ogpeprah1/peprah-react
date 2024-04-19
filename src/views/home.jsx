@@ -65,7 +65,7 @@ function Home() {
         "This website was built in REACT JS. Browse the code on github if you like yours to be like this. Hit me up if you can't find your way around it too.",
       img: AnalyticsImg,
       url: "https://github.com/ogpeprah1/peprah-react.git",
-      tags: "React JS",
+      tags: "React JS","Tailwind CSS",
     },
     {
       title: "School Website",
