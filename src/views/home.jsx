@@ -118,12 +118,16 @@ function Home() {
     },
     {
       title: ".NET",
-      value: 50,
+      value: 40,
     },
     {
       title: "Flutter",
       value: 70,
     },
+    {
+      title: "Next JS",
+      value: 30,
+    }
   ];
   const [isOpen, setIsopen] = useState(false);
 
