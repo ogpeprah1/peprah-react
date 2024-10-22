@@ -8,7 +8,6 @@ import AnalyticsImg from "../assets/analytics.png";
 import WebDevImg from "../assets/web-development.png";
 import GraphicImg from "../assets/graphics.png";
 import AppImg from "../assets/development.png";
-import ceoImg from "../assets/ceo.png";
 import CaseStudyCard from "../components/case-study-card";
 import whatsapp_icon from "../assets/whatsapp.png";
 import insta_icon from "../assets/instagram.png";
@@ -106,7 +105,7 @@ function Home() {
   const Skills = [
     {
       title: "React JS",
-      value: 80,
+      value: 90,
     },
     {
       title: "Laravel PHP",
@@ -117,16 +116,12 @@ function Home() {
       value: 90,
     },
     {
-      title: ".NET",
-      value: 40,
-    },
-    {
       title: "Flutter",
       value: 70,
     },
     {
       title: "Next JS",
-      value: 30,
+      value: 75,
     },
   ];
   const [isOpen, setIsopen] = useState(false);
@@ -135,11 +130,15 @@ function Home() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
-      .sendForm("service_uriaea9", "template_esmxml7", form.current, {
-        publicKey: "tbWXyHJwTsGcY_3Ki",
-      })
+      .sendForm(
+        process.env.REACT_APP_SERIAL_KEY,
+        process.env.REACT_APP_TEMPLATE_KEY,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_PUBLIC_KEY,
+        }
+      )
       .then(
         (res) => {
           console.log(res.text);
@@ -194,8 +193,9 @@ function Home() {
         <div className=" w-[100%] md:w-1/2 h-full mt-[10vh]">
           <h1 className="text-3xl">Hello i am</h1>
           <h1 className=" text-[5em] md:text-[7em] font-bold">Peprah</h1>
-          <p className="text-gray-300">
-            a Full Stack Developer and a Graphic Designer.
+          <p className="text-gray-300 w-[70%]">
+            a Full Stack Developer, a Graphic Designer and an aspiring Data
+            Scientist.
           </p>
           <div className=" py-2  mt-[30px] flex gap-5">
             <a href="https://wa.link/h33aon" target="_blank" rel="noreferrer">
@@ -231,11 +231,7 @@ function Home() {
             </a>
           </div>
         </div>
-        <img
-          src={ceoImg}
-          alt="pic of CEO"
-          className="w-full md:w-[30%] md:block mt-[10vh] md:ml-[15vh] bg-black rounded-lg"
-        />
+        <div className="hero-img md:w-[60%] md:block mt-10 md:mt-[10vh] rounded-md"></div>
       </div>
 
       {/* About Section */}
@@ -306,21 +302,14 @@ function Home() {
         <div className="flex flex-col w-full justify-center items-center ">
           {Skills.map((skill) => (
             <div className="flex flex-col md:flex-row gap-0 md:gap-2 justify-center items-center w-full md:w-[70%]">
-              <p className="w-full md:w-[20%] text-green-400 text-[1.2em] font-semibold">
+              <p className="w-full md:w-[20%] text-green-400 text-[1.1em] font-medium">
                 {skill.title}
               </p>
+              <div className="border h-[50px] border-green-400"></div>
               <ProgressBar completed={skill.value} />
             </div>
           ))}
         </div>
-
-        {/* <div className="flex overflow-x-auto bg-white w-[600px] p-2 gap-2">
-          <div className="w-[150px] bg-black h-12"></div>
-          <div className="w-[150px] bg-black h-12"></div>
-          <div className="w-[150px] bg-black h-12"></div>
-          <div className="w-[150px] bg-black h-12"></div>
-          <div className="w-[150px] bg-black h-12"></div>
-        </div> */}
       </div>
 
       {/* Case Studies Section */}
@@ -384,7 +373,7 @@ function Home() {
           id=""
           placeholder="enter message.."
           name="message"
-          className="w-full md:w-1/2 h-[30vh] p-3 rounded-md border-2 bg-[#202124] border-green-400 outline-none"
+          className="w-full md:w-1/2 h-[15vh] p-3 rounded-md border-2 bg-[#202124] border-green-400 outline-none"
           required
         ></textarea>
 

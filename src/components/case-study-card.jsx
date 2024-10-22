@@ -12,7 +12,7 @@ function CaseStudyCard(props) {
       </div>
 
       <div className="px-5 py-2 bg-black rounded-md">
-        <h1 className="text-white text-2xl md:text-3xl font-bold mb-4">
+        <h1 className="text-white text-2xl md:text-2xl font-bold my-4">
           {title}
         </h1>
         <p className="mb-3">{description}</p>
