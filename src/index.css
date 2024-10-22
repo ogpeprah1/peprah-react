@@ -21,3 +21,9 @@ html {
   background-position-y: -150px;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 400px) {
+  .hero-img {
+    background-position: center;
+  }
+}

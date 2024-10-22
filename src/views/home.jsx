@@ -193,7 +193,7 @@ function Home() {
         <div className=" w-[100%] md:w-1/2 h-full mt-[10vh]">
           <h1 className="text-3xl">Hello i am</h1>
           <h1 className=" text-[5em] md:text-[7em] font-bold">Peprah</h1>
-          <p className="text-gray-300 w-[70%]">
+          <p className="text-gray-300 md:w-[70%]">
             a Full Stack Developer, a Graphic Designer and an aspiring Data
             Scientist.
           </p>
@@ -231,7 +231,7 @@ function Home() {
             </a>
           </div>
         </div>
-        <div className="hero-img md:w-[60%] md:block mt-10 md:mt-[10vh] rounded-md"></div>
+        <div className="hero-img md:w-[60%] h-[200px] md:h-auto md:block mt-10 md:mt-[10vh] rounded-md"></div>
       </div>
 
       {/* About Section */}
