@@ -8,7 +8,7 @@ import AnalyticsImg from "../assets/analytics.png";
 import WebDevImg from "../assets/web-development.png";
 import GraphicImg from "../assets/graphics.png";
 import AppImg from "../assets/development.png";
-import ceoImg from "../assets/ceo.jpeg";
+import ceoImg from "../assets/ceo.png";
 import CaseStudyCard from "../components/case-study-card";
 import whatsapp_icon from "../assets/whatsapp.png";
 import insta_icon from "../assets/instagram.png";
@@ -65,7 +65,7 @@ function Home() {
         "This website was built in REACT JS. Browse the code on github if you like yours to be like this. Hit me up if you can't find your way around it too.",
       img: AnalyticsImg,
       url: "https://github.com/ogpeprah1/peprah-react.git",
-      tags: "React JS","Tailwind CSS",
+      tags: "React JS, Tailwind CSS",
     },
     {
       title: "School Website",
@@ -127,7 +127,7 @@ function Home() {
     {
       title: "Next JS",
       value: 30,
-    }
+    },
   ];
   const [isOpen, setIsopen] = useState(false);
 
@@ -256,7 +256,7 @@ function Home() {
             innovative solutions."
           </p>
           <a
-            href="CURRICULUM VITAE.pdf"
+            href="Peprah_CV.pdf"
             download="CV"
             className="bg-green-400 py-2 px-4 rounded-md mt-4"
             id="to-services-head-text"
