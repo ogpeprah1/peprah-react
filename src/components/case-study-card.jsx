@@ -24,15 +24,18 @@ function CaseStudyCard(props) {
         >
           view code
         </a>
-        <div className="mt-4 flex gap-2">
-          {tags.split(",").map((tag) => (
-            <span
-              key={tag.id}
-              className="rounded-full px-3 py-1 font-semibold text-gray-900 bg-gray-200 text-[0.7em]"
-            >
-              {tag}
-            </span>
-          ))}
+        <div className="my-4 flex gap-2">
+          {tags
+            .trim()
+            .split(",")
+            .map((tag) => (
+              <span
+                key={tag.id}
+                className="rounded-full px-3 py-1 font-semibold text-gray-900 bg-gray-200 text-[0.7em]"
+              >
+                {tag}
+              </span>
+            ))}
         </div>
       </div>
     </div>

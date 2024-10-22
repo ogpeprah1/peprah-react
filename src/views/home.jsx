@@ -43,7 +43,7 @@ function Home() {
 
   const Cases = [
     {
-      title: "API Dictionary",
+      title: "A Simple Dictionary",
       description:
         "A dictionary web app that utilises APIs. I used fetch.js to get all the JSON data needed to provide meaning for any word in the dictionary. Feel free to use it",
       img: WebDevImg,
@@ -56,7 +56,7 @@ function Home() {
         "A Todo web app with HTML, CSS and JS. The user inputs some activities that are yet to be accomplished at a particular time. The user also has the ability to edit and delete todos. ",
       img: GraphicImg,
       url: "https://github.com/ogpeprah1/todo-app.git",
-      tags: "HTML, CSS, JS",
+      tags: "HTML, CSS, JS, Local Storage",
     },
     {
       title: "Portfolio Website",
@@ -301,11 +301,11 @@ function Home() {
 
         <div className="flex flex-col w-full justify-center items-center ">
           {Skills.map((skill) => (
-            <div className="flex flex-col md:flex-row gap-0 md:gap-2 justify-center items-center w-full md:w-[70%]">
-              <p className="w-full md:w-[20%] text-green-400 text-[1.1em] font-medium">
+            <div className="flex md:flex-row gap-0 md:gap-2 justify-center items-center w-full md:w-[70%]">
+              <p className="w-[50%] md:w-[20%] text-green-400 md:text-[1.1em] font-medium">
                 {skill.title}
               </p>
-              <div className="border h-[50px] border-green-400"></div>
+              <div className="border h-[10px] md:h-[50px] border-green-400 hidden md:block"></div>
               <ProgressBar completed={skill.value} />
             </div>
           ))}

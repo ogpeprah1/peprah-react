@@ -9,7 +9,7 @@ function ServiceCard(props) {
         <h1 className="text-white text-2xl md:text-3xl font-bold mb-4">
           {title}
         </h1>
-        <p>{description}</p>
+        <p className="text-sm md:text-1xl">{description}</p>
       </div>
     </div>
   );
