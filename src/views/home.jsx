@@ -154,9 +154,9 @@ function Home() {
 
   return (
     <React.Fragment>
-      <div className="w-full fixed top-0 left-0 bg-black">
+      <div className="w-full fixed top-0 left-0 ">
         {/*logo */}
-        <div className="md:px-[7em] py-6 px-[2em] text-white md:flex justify-between items-center bg-black">
+        <div className="md:px-[7em] py-6 px-[2em] text-white md:flex justify-between items-center bg-black rounded-bl-[3rem]  rounded-br-[3.8rem]">
           {/*Nav Logo */}
           <p className="font-bold">peprah.inc</p>
 
