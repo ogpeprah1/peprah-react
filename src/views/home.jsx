@@ -764,8 +764,8 @@ function Home() {
                 insights and scalable applications.
               </p>
               <a
-                href="Peprah_CV.pdf"
-                download="CV"
+                href="cv.pdf"
+                download="Godfred_Peprah_Owusu_CV.pdf"
                 className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full font-semibold hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/50 transition-all duration-300"
                 id="to-services-head-text"
               >
