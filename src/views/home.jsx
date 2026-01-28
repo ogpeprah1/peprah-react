@@ -1111,31 +1111,17 @@ function Home() {
             </div>
           </div>
 
-          {/* Masonry Grid */}
+          {/* 3-Column Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* First Card - Larger */}
-            <div className="md:col-span-2">
+            {Cases.map((case_comp, index) => (
               <CaseStudyCard
-                img={Cases[0].img}
-                title={Cases[0].title}
-                description={Cases[0].description}
-                case_url={Cases[0].url}
-                tags={Cases[0].tags}
-                index={0}
-                large={true}
-              />
-            </div>
-
-            {/* Regular Cards */}
-            {Cases.slice(1).map((case_comp, index) => (
-              <CaseStudyCard
-                key={index + 1}
+                key={index}
                 img={case_comp.img}
                 title={case_comp.title}
                 description={case_comp.description}
                 case_url={case_comp.url}
                 tags={case_comp.tags}
-                index={index + 1}
+                index={index}
               />
             ))}
           </div>
