@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import ServiceCard from "../components/service-component";
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import ProgressBar from "../components/progress-bar";
 import emailjs from "@emailjs/browser";
 
 import AnalyticsImg from "../assets/analytics.png";
