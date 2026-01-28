@@ -451,7 +451,7 @@ function Home() {
           </svg>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-32 lg:py-0 w-full grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-32 w-full grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 z-10">
             <div className="space-y-4">
@@ -475,15 +475,15 @@ function Home() {
                 className="flex items-center gap-4 animate-fadeIn"
                 style={{ animationDelay: "0.3s" }}
               >
-                <div className="h-1 w-20 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
-                <p className="text-xl lg:text-2xl text-gray-400 font-light">
+                <div className="h-1 w-10 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
+                <p className="text-lg lg:text-xl text-gray-400 font-light">
                   Data-Driven Developer
                 </p>
               </div>
             </div>
 
             <p
-              className="text-base lg:text-lg text-gray-400 max-w-lg leading-relaxed animate-fadeIn"
+              className="text-base text-gray-400 max-w-lg leading-relaxed animate-fadeIn"
               style={{ animationDelay: "0.5s" }}
             >
               MSc-qualified{" "}
@@ -500,12 +500,12 @@ function Home() {
             </p>
 
             <div
-              className="flex flex-wrap gap-4 animate-fadeIn"
+              className="flex flex-wrap gap-4 animate-fadeIn text-sm"
               style={{ animationDelay: "0.7s" }}
             >
               <a
                 href="#contact-head-text"
-                className="group px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full font-semibold hover:scale-105 transition-all duration-300 shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50"
+                className="group px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full font-medium hover:scale-105 transition-all duration-300 shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50"
               >
                 Start a Project
                 <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">
@@ -514,7 +514,7 @@ function Home() {
               </a>
               <a
                 href="#case-head-text"
-                className="px-8 py-4 backdrop-blur-xl bg-white/5 border border-emerald-500/30 rounded-full font-semibold hover:bg-emerald-500/10 hover:border-emerald-500/50 transition-all duration-300"
+                className="px-8 py-4 backdrop-blur-xl bg-white/5 border border-emerald-500/30 rounded-full font-medium hover:bg-emerald-500/10 hover:border-emerald-500/50 transition-all duration-300"
               >
                 View Portfolio
               </a>
@@ -577,7 +577,7 @@ function Home() {
                   </div>
                   <div>
                     <p className="text-3xl font-bold bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
-                      50+
+                      15+
                     </p>
                     <p className="text-xs text-gray-400 mt-1">Projects</p>
                   </div>
@@ -710,7 +710,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-32 flex gap-12 items-center justify-center">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 lg:py-32 flex gap-12 items-center justify-center">
           <div className="space-y-8">
             <div>
               <span className="text-sm text-emerald-400 font-semibold tracking-widest uppercase flex items-center gap-2">
@@ -755,7 +755,7 @@ function Home() {
                 </span>
                 , MSc
               </h3>
-              <p className="text-gray-300 leading-relaxed text-lg">
+              <p className="text-gray-300 leading-relaxed text-base">
                 I hold a Master's degree in Data Analytics and specialize in
                 building data-driven software solutions. My expertise spans
                 machine learning, advanced analytics, full-stack development,
@@ -791,7 +791,7 @@ function Home() {
       {/* Services - Bento Box Grid */}
       <section
         id="services-head-text"
-        className="relative bg-black py-32 overflow-hidden"
+        className="relative bg-black lg:px-12 lg:py-32 overflow-hidden"
       >
         {/* Floating Code Background */}
         <div className="absolute inset-0 opacity-8">
@@ -855,7 +855,7 @@ function Home() {
           </svg>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-0 relative z-10">
           {/* Header - Asymmetric */}
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-16">
             <div className="">
