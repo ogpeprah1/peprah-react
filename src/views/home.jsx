@@ -1303,7 +1303,7 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             {/* Brand */}
             <div className="lg:col-span-2">
-              <h3 className="text-3xl font-black bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent mb-4">
+              <h3 className="text-xl font-black bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent mb-4">
                 PEPRAH.INC
               </h3>
               <p className="text-gray-400 leading-relaxed mb-6 max-w-md text-xs">
