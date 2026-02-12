@@ -536,7 +536,7 @@ function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
               {/* Floating stats cards */}
               <div className="absolute bottom-8 left-8 right-8 backdrop-blur-xl bg-emerald-500/10 rounded-2xl p-6 border border-emerald-500/30">
-                <div className="grid grid-cols-3 gap-4 text-center">
+                <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
                     <p className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
                       MSc
