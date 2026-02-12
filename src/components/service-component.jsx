@@ -34,9 +34,7 @@ function ServiceCard(props) {
           >
             {title}
           </h3>
-          <p
-            className={`text-gray-300 ${large ? "text-lg" : "text-base"} leading-relaxed`}
-          >
+          <p className={`text-gray-300 text-sm leading-relaxed`}>
             {description}
           </p>
         </div>

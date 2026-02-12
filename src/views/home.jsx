@@ -8,7 +8,7 @@ import WebDevImg from "../assets/web-development.png";
 import GraphicImg from "../assets/graphics.png";
 import AppImg from "../assets/development.png";
 import CaseStudyCard from "../components/case-study-card";
-import whatsapp_icon from "../assets/whatsapp.png";
+import linkedin_icon from "../assets/linkedin.png";
 import insta_icon from "../assets/instagram.png";
 import github_icon from "../assets/github.png";
 
@@ -56,21 +56,6 @@ function Home() {
       img: GraphicImg,
       url: "https://github.com/ogpeprah1/todo-app.git",
       tags: "HTML, CSS, JS, Local Storage",
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "This website was built in REACT JS. Browse the code on github if you like yours to be like this. Hit me up if you can't find your way around it too.",
-      img: AnalyticsImg,
-      url: "https://github.com/ogpeprah1/peprah-react.git",
-      tags: "React JS, Tailwind CSS",
-    },
-    {
-      title: "School Website",
-      description: "A simple school website with HTML and CSS.",
-      img: AppImg,
-      url: "https://github.com/ogpeprah1/school-website-new.git",
-      tags: "HTML, CSS",
     },
   ];
 
@@ -284,7 +269,7 @@ function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex justify-between items-center">
           <h1 className="text-2xl lg:text-3xl font-black bg-gradient-to-r from-emerald-400 via-teal-400 to-green-500 bg-clip-text text-transparent">
             PEPRAH{" "}
-            <span className="text-sm font-light text-emerald-400/60">
+            <span className="text-xs font-light text-emerald-400/60">
               DATA + DEV
             </span>
           </h1>
@@ -331,7 +316,7 @@ function Home() {
                   key={index}
                   href={link.link}
                   onClick={() => setIsopen(false)}
-                  className="block text-lg font-medium text-gray-300 hover:text-white transition-colors"
+                  className="block text-sm font-medium text-gray-300 hover:text-white transition-colors"
                 >
                   {link.name}
                 </a>
@@ -455,7 +440,7 @@ function Home() {
           {/* Left Content */}
           <div className="space-y-8 z-10">
             <div className="space-y-4">
-              <p className="text-sm lg:text-base text-emerald-400 font-semibold tracking-widest uppercase animate-fadeIn flex items-center gap-2">
+              <p className="text-xs text-emerald-400 font-semibold tracking-widest uppercase animate-fadeIn flex items-center gap-2">
                 <svg
                   className="w-4 h-4"
                   fill="currentColor"
@@ -463,7 +448,7 @@ function Home() {
                 >
                   <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
                 </svg>
-                MSc Data Analytics • Software Engineer
+                MSc Management with Data Analytics
               </p>
               <h1 className="text-6xl lg:text-8xl font-black leading-none animate-slideUp">
                 <span className="block text-gray-300">Hi, I'm</span>
@@ -471,32 +456,15 @@ function Home() {
                   Godfred
                 </span>
               </h1>
-              <div
-                className="flex items-center gap-4 animate-fadeIn"
-                style={{ animationDelay: "0.3s" }}
-              >
-                <div className="h-1 w-10 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
-                <p className="text-lg lg:text-xl text-gray-400 font-light">
-                  Data-Driven Developer
-                </p>
-              </div>
             </div>
 
             <p
               className="text-base text-gray-400 max-w-lg leading-relaxed animate-fadeIn"
               style={{ animationDelay: "0.5s" }}
             >
-              MSc-qualified{" "}
-              <span className="text-emerald-400 font-semibold">
-                Data Analytics specialist
-              </span>{" "}
-              and
-              <span className="text-teal-400 font-semibold">
-                {" "}
-                Full-Stack Developer
-              </span>
-              . I leverage data science and software engineering to build
-              intelligent, scalable solutions.
+              MSc in Management with Data Analytics and Full-Stack Developer. I
+              am just a curious mind that seeks to solve business problems with
+              tech, data, and creativity.
             </p>
 
             <div
@@ -527,9 +495,9 @@ function Home() {
             >
               {[
                 {
-                  icon: whatsapp_icon,
-                  url: "https://wa.link/h33aon",
-                  color: "from-emerald-500 to-green-600",
+                  icon: linkedin_icon,
+                  url: "https://linkedin.com/in/ogpeprah",
+                  color: "from-blue-500 to-blue-700",
                 },
                 {
                   icon: github_icon,
@@ -574,12 +542,6 @@ function Home() {
                       MSc
                     </p>
                     <p className="text-xs text-gray-400 mt-1">Data Analytics</p>
-                  </div>
-                  <div>
-                    <p className="text-3xl font-bold bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
-                      15+
-                    </p>
-                    <p className="text-xs text-gray-400 mt-1">Projects</p>
                   </div>
                   <div>
                     <p className="text-3xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
@@ -713,7 +675,7 @@ function Home() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12 lg:py-32 flex gap-12 items-center justify-center">
           <div className="space-y-8">
             <div>
-              <span className="text-sm text-emerald-400 font-semibold tracking-widest uppercase flex items-center gap-2">
+              <span className="text-xs text-emerald-400 font-semibold tracking-widest uppercase flex items-center gap-2">
                 <svg
                   className="w-4 h-4"
                   fill="currentColor"
@@ -731,36 +693,22 @@ function Home() {
               </h2>
             </div>
 
-            {/* Stats Grid - Bento Box Style */}
-            <div className="grid grid-cols-2 gap-4 mt-8">
-              <div className="backdrop-blur-xl bg-emerald-500/5 p-6 rounded-3xl border border-emerald-500/20 hover:bg-emerald-500/10 transition-all duration-300">
-                <p className="text-4xl font-black bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
-                  MSc
-                </p>
-                <p className="text-gray-400 mt-2">Data Analytics</p>
-              </div>
-              <div className="backdrop-blur-xl bg-teal-500/5 p-6 rounded-3xl border border-teal-500/20 hover:bg-teal-500/10 transition-all duration-300">
-                <p className="text-4xl font-black bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
-                  50+
-                </p>
-                <p className="text-gray-400 mt-2">Tech Projects</p>
-              </div>
-            </div>
-
             {/* Description Card */}
             <div className="backdrop-blur-xl bg-gradient-to-br from-emerald-500/10 to-teal-500/5 p-8 rounded-3xl border border-emerald-500/20">
               <h3 className="text-2xl font-bold mb-4 text-white">
                 <span className="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
                   Godfred Peprah Owusu
                 </span>
-                , MSc
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
-                I hold a Master's degree in Data Analytics and specialize in
-                building data-driven software solutions. My expertise spans
-                machine learning, advanced analytics, full-stack development,
-                and cloud architecture. I transform complex data into actionable
-                insights and scalable applications.
+                I am passionate about turning data into clear, strategic
+                decisions. I combine analytical insight with a strong
+                understanding of technology to design practical, data-driven
+                solutions that improve performance and efficiency. My experience
+                spans analytics, software development, and cloud architecture,
+                enabling me to build systems that are both intelligent and
+                scalable. I approach every project with a focus on impact,
+                clarity, and long-term value.
               </p>
               <a
                 href="cv.pdf"
@@ -857,24 +805,19 @@ function Home() {
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-0 relative z-10">
           {/* Header - Asymmetric */}
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-16">
-            <div className="">
-              <span className="text-sm text-emerald-400 font-semibold tracking-widest uppercase flex items-center gap-2">
-                <svg
-                  className="w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 00-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2z" />
-                </svg>
-                Core Services
+
+          <div className="text-center mb-16 ">
+            <span className="text-xs text-emerald-400 font-semibold tracking-widest uppercase flex items-center justify-center gap-2 ">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 00-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2z" />
+              </svg>
+              Core Expertise
+            </span>
+            <h2 className="text-5xl lg:text-7xl font-black mt-4 leading-tight">
+              <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-green-500 bg-clip-text text-transparent">
+                Technical Solutions
               </span>
-              <h2 className="text-5xl lg:text-7xl font-black mt-4 leading-tight">
-                <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-green-500 bg-clip-text text-transparent">
-                  Technical Solutions
-                </span>
-              </h2>
-            </div>
+            </h2>
           </div>
 
           {/* 2x2 Grid Layout */}
@@ -956,7 +899,7 @@ function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
           {/* Centered Heading */}
           <div className="text-center mb-16">
-            <span className="text-sm text-emerald-400 font-semibold tracking-widest uppercase">
+            <span className="text-xs text-emerald-400 font-semibold tracking-widest uppercase">
               Technical Stack
             </span>
             <h2 className="text-5xl lg:text-7xl font-black mt-4 leading-tight">
@@ -1078,7 +1021,7 @@ function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
           {/* Header */}
           <div className="text-center mb-20">
-            <span className="text-sm text-emerald-400 font-semibold tracking-widest uppercase">
+            <span className="text-xs text-emerald-400 font-semibold tracking-widest uppercase">
               Portfolio
             </span>
             <h2 className="text-5xl lg:text-7xl font-black mt-4 mb-6">
@@ -1086,13 +1029,13 @@ function Home() {
                 Featured Projects
               </span>
             </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-12">
+            <p className="text-gray-400 text-sm max-w-2xl mx-auto mb-12">
               Innovative data-driven applications and software solutions
               showcasing technical excellence
             </p>
 
             {/* Filter Tabs */}
-            <div className="flex flex-wrap justify-center gap-4 mt-12">
+            <div className="flex flex-wrap justify-center gap-4 mt-12 text-xs">
               <button className="px-6 py-3 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold hover:scale-105 transition-all duration-300 shadow-lg shadow-emerald-500/30">
                 All Projects
               </button>
@@ -1218,25 +1161,20 @@ function Home() {
           {/* Left - Info */}
           <div className="space-y-8">
             <div>
-              <span className="text-sm text-emerald-400 font-semibold tracking-widest uppercase">
+              <span className="text-xs text-emerald-400 font-semibold tracking-widest uppercase text-center lg:text-left flex items-center gap-2 justify-center lg:justify-start">
                 Get in Touch
               </span>
-              <h2 className="text-5xl lg:text-7xl font-black mt-4 mb-6 leading-tight">
-                <span className="block text-white">Let's Build</span>
+              <h2 className="text-5xl lg:text-7xl font-black mt-4 mb-6 leading-tight text-center lg:text-left">
+                <span className="block text-white">Let's </span>
                 <span className="block bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
-                  Data Solutions
+                  Collaborate
                 </span>
               </h2>
-              <p className="text-gray-400 text-lg leading-relaxed">
-                Need data analytics, ML solutions, or custom software
-                development? Let's collaborate and transform your data into
-                actionable insights.
-              </p>
             </div>
 
             {/* Contact Info Cards */}
             <div className="space-y-4">
-              <div className="backdrop-blur-xl bg-emerald-500/5 p-6 rounded-2xl border border-emerald-500/20 flex items-center gap-4 hover:bg-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
+              <div className="backdrop-blur-xl bg-emerald-500/5 p-6 rounded-2xl border border-emerald-500/20 flex items-center  gap-4 hover:bg-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
                 <div className="w-12 h-12 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-xl flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-emerald-400"
@@ -1254,24 +1192,21 @@ function Home() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Email</p>
-                  <p className="text-white font-semibold">hello@peprah.inc</p>
-                </div>
-              </div>
-
-              <div className="backdrop-blur-xl bg-emerald-500/5 p-6 rounded-2xl border border-emerald-500/20 flex items-center gap-4 hover:bg-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500/20 to-emerald-600/20 rounded-xl flex items-center justify-center">
-                  <img src={whatsapp_icon} alt="" className="w-6 h-6" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-400">WhatsApp</p>
-                  <p className="text-white font-semibold">Available 24/7</p>
+                  <p className="text-white font-medium text-xs">
+                    godfredpeprahowusu@gmail.com
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center lg:justify-start">
               {[
+                {
+                  icon: linkedin_icon,
+                  url: "https://linkedin.com/in/ogpeprah",
+                  label: "LinkedIn",
+                },
                 {
                   icon: github_icon,
                   url: "https://github.com/ogpeprah1",
@@ -1305,7 +1240,7 @@ function Home() {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="backdrop-blur-xl bg-emerald-500/5 p-8 lg:p-12 rounded-3xl border border-emerald-500/20"
+            className="backdrop-blur-xl bg-emerald-500/5 p-8 lg:p-12 rounded-3xl border border-emerald-500/20 text-xs"
           >
             <div className="space-y-6">
               <div>
@@ -1340,7 +1275,7 @@ function Home() {
 
               <button
                 type="submit"
-                className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl font-bold text-lg hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl font-medium text-sm hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 Send Message
                 <svg
@@ -1363,7 +1298,7 @@ function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="relative bg-black border-t border-emerald-500/10">
+      <footer className="relative bg-black border-t border-emerald-500/10 ">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             {/* Brand */}
@@ -1371,13 +1306,16 @@ function Home() {
               <h3 className="text-3xl font-black bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent mb-4">
                 PEPRAH.INC
               </h3>
-              <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
+              <p className="text-gray-400 leading-relaxed mb-6 max-w-md text-xs">
                 MSc Data Analytics • Full-Stack Development • Intelligent
                 Solutions
               </p>
               <div className="flex gap-3">
                 {[
-                  { icon: whatsapp_icon, url: "https://wa.link/h33aon" },
+                  {
+                    icon: linkedin_icon,
+                    url: "https://linkedin.com/in/ogpeprah",
+                  },
                   { icon: github_icon, url: "https://github.com/ogpeprah1" },
                   { icon: insta_icon, url: "https://instagram.com/gho_dey/" },
                 ].map((social, index) => (
@@ -1396,13 +1334,13 @@ function Home() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2">
+              <h4 className="text-white font-semibold mb-2">Quick Links</h4>
+              <ul className="space-y-1">
                 {Links.map((link, index) => (
                   <li key={index}>
                     <a
                       href={link.link}
-                      className="text-gray-400 hover:text-purple-400 transition-colors"
+                      className="text-gray-400 hover:text-teal-500 transition-colors text-xs"
                     >
                       {link.name}
                     </a>
@@ -1413,10 +1351,10 @@ function Home() {
 
             {/* Services */}
             <div>
-              <h4 className="text-white font-semibold mb-4">Services</h4>
+              <h4 className="text-white font-semibold mb-2">Services</h4>
               <ul className="space-y-2">
                 {services.map((service, index) => (
-                  <li key={index} className="text-gray-400 text-sm">
+                  <li key={index} className="text-gray-400 text-xs">
                     {service.title}
                   </li>
                 ))}
@@ -1425,11 +1363,11 @@ function Home() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="pt-8 border-t border-emerald-500/10 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
+          <div className="pt-8 border-t text-xs border-emerald-500/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-400 ">
               © 2024 Peprah Inc. All rights reserved.
             </p>
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-500">
               Powered by Data & Code{" "}
               <span className="text-emerald-500">✨</span>
             </p>
